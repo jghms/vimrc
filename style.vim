@@ -9,3 +9,8 @@ colorscheme ayu
 
 " enable hybrid line numbers (shows current number and relative)
 set number relativenumber
+
+" set lightline theme
+let g:lightline = {
+    \ 'colorscheme': 'ayu',
+    \ }

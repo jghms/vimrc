@@ -1,22 +1,39 @@
-" Typescript syntax highlighting
-call dein#add('HerringtonDarkholme/yats.vim')
+call plug#begin('~/.config/nvim')
 
-" Typescript language server
-call dein#add('mhartington/nvim-typescript', {'build': './install.sh'})
+Plug 'tpope/vim-surround'
+
+" org-mode
+Plug 'jceb/vim-orgmode'
+
+" Typescript syntax highlighting
+Plug 'HerringtonDarkholme/yats.vim'
+
+" Comments
+Plug 'tomtom/tcomment_vim'
 
 " Ayu color theme
-call dein#add('ayu-theme/ayu-vim')
+Plug 'ayu-theme/ayu-vim'
+Plug 'yarisgutierrez/ayu-lightline'
+
+" Lightline status line 
+Plug 'itchyny/lightline.vim'
 
 " Add toml syntax
-call dein#add('cespare/vim-toml')
+Plug 'cespare/vim-toml'
 
 " Enable rust language support
-call dein#add('rust-lang/rust.vim')
-call dein#add('sebastianmarkow/deoplete-rust')
+Plug 'rust-lang/rust.vim'
+
+" Enable go language support
+Plug 'fatih/vim-go'
+
+" syntax highlighting solidity
+Plug 'tomlion/vim-solidity'
 
 " Add auto complete
-call dein#add('Shougo/deoplete.nvim')
-if !has('nvim')
-  call dein#add('roxma/nvim-yarp')
-  call dein#add('roxma/vim-hug-neovim-rpc')
-endif
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Packge versions
+Plug 'meain/vim-package-info', { 'do': 'npm install' }
+
+call plug#end()

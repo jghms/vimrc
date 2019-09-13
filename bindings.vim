@@ -4,6 +4,10 @@ let mapleader = "\<Space>"
 " Open file search
 nmap <leader>t :find<space>
 
+" mapping quickfix list
+nmap [q :cnext<cr>
+nmap ]q :cprevious<cr>
+
 " Open vim config folder
 nmap <leader>ev :e ~/.config/nvim<cr>
 
