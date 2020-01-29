@@ -13,6 +13,7 @@ source ~/.config/nvim/coc.vim
 " Set find path 
 set path+=**
 set wildignore+=**/node_modules/**
+set wildignore+=**/lib/**
 
 " Enable auto complete at startup
 let g:deoplete#enable_at_startup = 1

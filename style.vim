@@ -1,5 +1,7 @@
 " enable true colors support
-set termguicolors 
+if (has("termguicolors"))
+    set termguicolors 
+endif
 
 " let ayucolor="light"  " for light version of theme
 let ayucolor="mirage" " for mirage version of theme
@@ -14,3 +16,5 @@ set number relativenumber
 let g:lightline = {
     \ 'colorscheme': 'ayu',
     \ }
+
+let g:airline_theme='ayu_mirage'

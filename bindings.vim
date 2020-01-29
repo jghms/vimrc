@@ -2,7 +2,9 @@
 let mapleader = "\<Space>"
 
 " Open file search
-nmap <leader>t :find<space>
+nmap <leader>t :CtrlP<cr>
+let g:ctrlp_root_markers = ['.git', 'package.json']
+let g:ctrlp_working_path_mode = 'ra'
 
 " mapping quickfix list
 nmap [q :cnext<cr>
@@ -13,3 +15,10 @@ nmap <leader>ev :e ~/.config/nvim<cr>
 
 " Reload vim config
 nmap <leader>vv :source ~/.config/nvim/init.vim<cr>
+
+" Easy align bindings
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
+
+nmap <C-b> :NERDTreeToggle<cr>
+

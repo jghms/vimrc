@@ -43,6 +43,7 @@ nmap <silent> gr <Plug>(coc-references)
 
 " Format with <leader>p
 nmap <silent> <leader>p :call CocAction('runCommand', 'prettier.formatFile')<cr>
+nmap <leader>f :Format<cr>
 
 " Use K to show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
@@ -63,7 +64,7 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 " coc-status`
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
-nmap <leader>qf  <Plug>(coc-fix-current)
+nmap <leader>qf  :CocFix<cr>
 
 " Using CocList
 " Show all diagnostics
