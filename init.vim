@@ -25,3 +25,6 @@ autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 let g:deoplete#sources#rust#racer_binary = '/Users/jan/.cargo/bin/racer'
 let g:deoplete#sources#rust#rust_source_path = '/Users/jan/.cargo/rust/src'
 let g:deoplete#sources#rust#show_duplicates = 1
+
+let g:ctrlp_show_hidden = 1
+
